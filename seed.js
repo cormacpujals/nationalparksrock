@@ -5,7 +5,7 @@ const Park = require('./models/park')
 const api = process.env.API_KEY;
 
 // seed 50 parks at a time (add them to my database)
-// automatically add new parks to the db
+// add new parks to the db
 async function getParks() {
   try {
     const parks = await fetch(`${BASE_URL}?&start=450&api_key=${api}`)

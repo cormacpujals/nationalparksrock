@@ -5,4 +5,6 @@ const parksCtrl = require('../../controllers/api/parks');
 
 router.get('/', parksCtrl.index)
 
+router.post('/', parksCtrl.toggleAdd)
+
 module.exports = router;

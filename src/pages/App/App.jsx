@@ -38,6 +38,7 @@ export default function App() {
               {/* Route components in here */}
               <Route path="/" element={<ParkList parks={parks} />} />
               <Route path="/Park/:parkId" element={<ParkDetail parks={parks} />} />
+              {/* new component for wishlist */}
             </Routes>
           </>
           :
