@@ -51,6 +51,5 @@ async function remove(req, res) {
 
 async function wishlistIndex(req, res) {
   const parks = await Park.find({usersArray: req.user._id})
-  console.log(parks)
   res.json(parks)
 }
