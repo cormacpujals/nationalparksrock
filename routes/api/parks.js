@@ -7,4 +7,6 @@ router.get('/', parksCtrl.index)
 
 router.post('/', parksCtrl.toggleAdd)
 
+router.get('/wishlist', parksCtrl.wishlistIndex)
+
 module.exports = router;

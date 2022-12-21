@@ -5,6 +5,7 @@ import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
 import ParkList from '../ParkList/ParkList';
 import ParkDetail from '../ParkDetail/ParkDetail';
+import Wishlist from '../Wishlist/Wishlist';
 import NavBar from '../../components/NavBar/NavBar';
 import * as parksAPI from "../../utilities/parks-api";
 
@@ -38,7 +39,7 @@ export default function App() {
               {/* Route components in here */}
               <Route path="/" element={<ParkList parks={parks} />} />
               <Route path="/Park/:parkId" element={<ParkDetail parks={parks} />} />
-              {/* new component for wishlist */}
+              <Route path="/wishlist" element={<Wishlist parks={parks} />} />
             </Routes>
           </>
           :

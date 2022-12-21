@@ -16,9 +16,10 @@ export default function ParkDetail({parks}) {
       <img src={park.images[0].url} alt=""/>
       <br />
       <br />
-      <a href={park.url} target="_blank" >Find out more!</a>
-      <a href={park.directionsUrl} target="_blank" >Get directions here!</a>
       <p>{park.description}</p>
+      <a href={park.url} target="_blank" >Find out more!</a>
+      &nbsp;|&nbsp;
+      <a href={park.directionsUrl} target="_blank" >Get directions here!</a>
       <h6>Latitude: {park.latitude} Longitude: {park.longitude}</h6>
       <button onClick={addToWishlist}>Add to Wishlist</button>
     </div>

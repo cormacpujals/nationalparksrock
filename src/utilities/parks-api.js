@@ -8,3 +8,7 @@ export async function index() {
 export async function toggleAdd(parkId) {
   return sendRequest(BASE_URL, 'POST', {parkId})
 }
+
+export async function wishlistIndex() {
+  return sendRequest(`${BASE_URL}/wishlist`);
+}

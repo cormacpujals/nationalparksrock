@@ -3,6 +3,7 @@ const Park = require('../../models/park');
 module.exports = {
   index,
   toggleAdd,
+  wishlistIndex
 };
 
 async function index(req, res) {
@@ -38,4 +39,10 @@ async function toggleAdd(req, res) {
   }
   await park.save()
   res.json(park)
+}
+
+async function wishlistIndex(req, res) {
+  const parks = await Park.find({usersArray: req.user._id})
+  console.log(parks)
+  res.json(parks)
 }
