@@ -2,8 +2,9 @@ const Park = require('../../models/park');
 
 module.exports = {
   index,
-  toggleAdd,
-  wishlistIndex
+  add,
+  remove,
+  wishlistIndex,
 };
 
 async function index(req, res) {
@@ -30,12 +31,19 @@ async function index(req, res) {
   res.json(parks);
 };
 
-async function toggleAdd(req, res) {
+async function add(req, res) {
+  const park = await Park.findById(req.body.parkId) 
+  if (!park.usersArray.includes(req.user._id)) {
+    park.usersArray.push(req.user._id)
+  }
+  await park.save()
+  res.json(park)
+}
+
+async function remove(req, res) {
   const park = await Park.findById(req.body.parkId) 
   if (park.usersArray.includes(req.user._id)) {
     park.usersArray.remove(req.user._id)
-  } else {
-    park.usersArray.push(req.user._id)
   }
   await park.save()
   res.json(park)

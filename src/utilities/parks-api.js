@@ -5,8 +5,12 @@ export async function index() {
   return sendRequest(BASE_URL);
 }
 
-export async function toggleAdd(parkId) {
+export async function add(parkId) {
   return sendRequest(BASE_URL, 'POST', {parkId})
+}
+
+export async function remove(parkId) {
+  return sendRequest(`${BASE_URL}/remove`, 'POST', {parkId})
 }
 
 export async function wishlistIndex() {

@@ -16,7 +16,8 @@ export default function ParkList({parks}) {
   // console.log(wishlistParks)
 
 
-  const wishListParkCards = wishlistParks.map((p, idx) => <WishlistCard park ={p} key={idx} />)
+  const wishListParkCards = wishlistParks.map((p, idx) => 
+  <WishlistCard park ={p} key={idx} wishlistParks={wishlistParks} setWishlistParks={setWishlistParks} />)
 
 
   return (

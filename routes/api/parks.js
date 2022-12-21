@@ -5,7 +5,9 @@ const parksCtrl = require('../../controllers/api/parks');
 
 router.get('/', parksCtrl.index)
 
-router.post('/', parksCtrl.toggleAdd)
+router.post('/', parksCtrl.add)
+
+router.post('/remove', parksCtrl.remove)
 
 router.get('/wishlist', parksCtrl.wishlistIndex)
 

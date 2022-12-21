@@ -7,7 +7,7 @@ export default function ParkDetail({parks}) {
   const park = parks.find(p => p.id === parkId) 
 
   async function addToWishlist() {
-    const favorite = await parksAPI.toggleAdd(park._id)
+    const favorite = await parksAPI.add(park._id)
   }
 
   return (
