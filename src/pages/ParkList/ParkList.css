@@ -7,3 +7,11 @@
   text-decoration: none;
   color: black;
 }
+
+.parkListDiv h1 {
+  margin: 5vmin;
+}
+
+.parkListDiv span {
+  font-size: 1.5vmin;
+}

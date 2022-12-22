@@ -12,9 +12,10 @@ export default function ParkList({parks}) {
   const parkCards = searchParks.map((p, idx) => <ParkCard park={p} key={idx} />)
 
   return (
-    <div>
+    <div className="parkListDiv">
+      <h1>Discover your next adventure now!</h1>
       <br />
-      Search: &nbsp;
+      <span>Search:</span> &nbsp;
       <input 
       onChange={(evt) => setSearchInput(evt.target.value)} 
       type="text"

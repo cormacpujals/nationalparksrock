@@ -17,10 +17,12 @@ export default function ParkDetail({parks}) {
       <br />
       <br />
       <p>{park.description}</p>
+      <p>Latitude: {park.latitude} Longitude: {park.longitude}</p>
       <a href={park.url} target="_blank" >Find out more!</a>
       &nbsp;|&nbsp;
       <a href={park.directionsUrl} target="_blank" >Get directions here!</a>
-      <h6>Latitude: {park.latitude} Longitude: {park.longitude}</h6>
+      <br />
+      <br />
       <button onClick={addToWishlist}>Add to Wishlist</button>
     </div>
   )

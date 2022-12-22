@@ -2,3 +2,21 @@
   height: 30vh;
   width: 50vw;
 }
+.parkDetail > h1 {
+  margin: 3vh;
+}
+
+.parkDetail > p {
+  margin: 3vh 15vw;
+}
+
+.parkDetail > a {
+  margin: 3vh;
+}
+
+.parkDetail > button:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
+

@@ -13,7 +13,7 @@ export default function WishlistCard({park, wishlistParks, setWishlistParks}) {
 
   return (
     <div className="wishlistCard">
-      <p>{park.name}</p>
+      <span>{park.name}</span>
       <button onClick={deleteFromWishlist}>Remove</button>
     </div>
   )
