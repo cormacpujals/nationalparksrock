@@ -1,6 +1,6 @@
 # NationalParksRock
 
-NationalParksRock is a full-stack, single-page application that utilizes the popular front-end library, React! I made this app because 1) I absolutely love our national parks, and 2) I wanted to make it easy to discover parks and add them to a visit wishlist. 
+NationalParksRock is a full-stack, single-page application that utilizes the popular front-end library, React! I made this app because 1) I absolutely love our national parks, and 2) I wanted to make it easy to discover parks and add keep track of where you want to go!
 
 # Images:
 
