@@ -6,6 +6,8 @@
   text-align: center;
   height: 30vh;
   width: 30vw;
+  opacity: 1;
+  transition: .4s ease;
 }
 
 .title {
@@ -17,4 +19,8 @@
   opacity: 0.6;
   border-radius: 15px;
   margin: 1vw;
+}
+
+.parkCard:hover {
+  opacity: 0.7;
 }
