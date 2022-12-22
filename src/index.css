@@ -31,9 +31,9 @@ code {
     monospace;
 }
 
-#root {
+/* #root {
   height: 100%;
-}
+} */
 
 .align-ctr {
   text-align: center;
@@ -65,7 +65,7 @@ code {
   overflow-y: scroll;
 }
 
-.section-heading {
+/* .section-heading {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -76,7 +76,7 @@ code {
   padding: .6vmin;
   text-align: center;
   font-size: 2vmin;
-}
+} */
 
 .form-container {
   padding: 3vmin;

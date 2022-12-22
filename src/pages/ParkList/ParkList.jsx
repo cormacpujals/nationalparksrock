@@ -6,13 +6,14 @@ export default function ParkList({parks}) {
   const [searchInput, setSearchInput] = useState("");
 
   const searchParks = searchInput ? 
-    parks.filter(p => p.name.toLowerCase().includes(searchInput.toLowerCase())).slice(0, 30)
+    parks.filter(p => p.name.toLowerCase().includes(searchInput.toLowerCase())).slice(0, 20)
     : 
-    parks.slice(418, 468);
+    parks.slice(183, 216);
   const parkCards = searchParks.map((p, idx) => <ParkCard park={p} key={idx} />)
 
   return (
     <div>
+      <br />
       Search: &nbsp;
       <input 
       onChange={(evt) => setSearchInput(evt.target.value)} 
