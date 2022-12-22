@@ -1,6 +1,7 @@
 .parkCard {
   border-style: solid;
-  border-radius: 5px;
+  border-radius: 30px;
+  border-color: white;
   margin: 1vw;
   text-align: center;
   height: 30vh;

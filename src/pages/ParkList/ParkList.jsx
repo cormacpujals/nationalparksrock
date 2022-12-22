@@ -8,7 +8,7 @@ export default function ParkList({parks}) {
   const searchParks = searchInput ? 
     parks.filter(p => p.name.toLowerCase().includes(searchInput.toLowerCase())).slice(0, 30)
     : 
-    parks.slice(0, 30);
+    parks.slice(418, 468);
   const parkCards = searchParks.map((p, idx) => <ParkCard park={p} key={idx} />)
 
   return (

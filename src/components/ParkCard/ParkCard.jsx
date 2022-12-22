@@ -6,7 +6,7 @@ export default function ParkCard({park}) {
     <Link to={`/Park/${park.id}`}>
       <div className="parkCard"
       style={{
-        background: `url(${park.images[0].url})`,
+        backgroundImage: `url(${park.images[0].url})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center center'
