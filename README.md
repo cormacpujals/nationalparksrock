@@ -4,7 +4,17 @@ NationalParksRock is a full-stack, single-page application that utilizes the pop
 
 # Images:
 
-<img src="">
+Folks can log in or sign in here!
+<img src="https://i.imgur.com/xDFJ25M.jpg">
+
+Upon loggin in, folks will see an index of national parks and will have the ability to search dynamically for any US national park!
+<img src="https://i.imgur.com/9s3nPQq.jpg">
+
+Clicking on a park will take you to its detail page.
+<img src="https://i.imgur.com/gvblG9e.png">
+
+The visit wishlist page holds all of the parks you have added to your wishlist. 
+<img src="https://i.imgur.com/cYnxQR3.png">
 
 
 # Technologies Used
