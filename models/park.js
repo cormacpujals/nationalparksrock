@@ -35,7 +35,6 @@ const parkSchema = new Schema({
   usersArray: [
     {type: Schema.Types.ObjectId, ref: 'User'}
   ],
-  // testing: {type: String, default: "testing"},
   images: [],
 }, {
   timestamps: true
