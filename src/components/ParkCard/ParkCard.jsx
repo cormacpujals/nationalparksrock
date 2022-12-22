@@ -12,7 +12,7 @@ export default function ParkCard({park}) {
         backgroundPosition: 'center center'
       }}
       >
-        <h3 className="title">{park.name}</h3>
+        <p className="title">{park.name}</p>
       </div>
     </Link>
   )

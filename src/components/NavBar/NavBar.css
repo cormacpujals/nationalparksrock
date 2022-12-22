@@ -1,0 +1,19 @@
+.navbar {
+  padding: 2vmin;
+  background-color: green;
+  color: white;
+  font-size: 1.5vmin;
+}
+.navbar > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5vmin;
+}
+
+.navbar > a:hover {
+  background-color: lightgreen;
+  border-radius: 5px;
+  padding: 0.3vmin;
+  color: black;
+}

@@ -1,0 +1,42 @@
+.authPage {
+  height: 100vh;
+  background-image: url("https://i.imgur.com/e4zdemD.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ .authPage {
+  padding-top: 50vh;
+ }
+
+input {
+  padding: 1vmin;
+  margin: 0.5vmin;
+  font-size: 1.5vmin;
+  border: .1vmin solid var(--tan-3);
+  border-radius: .5vmin;
+  opacity: .8;
+}
+
+label {
+  font-size: 3vmin;
+  color: whitesmoke;
+}
+
+button, a.button {
+  margin: 1vmin;
+  padding: 1vmin;
+  color: var(--white);
+  background-color: green;
+  opacity: .9;
+  font-size: 2vmin;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border: .1vmin solid var(--tan-2);
+  border-radius: .5vmin;
+  outline: none;
+  cursor: pointer;
+}
+
