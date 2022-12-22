@@ -8,10 +8,12 @@
 
 .parkDetail > p {
   margin: 3vh 15vw;
+  font-size: 1.5vmin;
 }
 
 .parkDetail > a {
   margin: 3vh;
+  font-size: 1.5vmin;
 }
 
 .parkDetail > button:hover {
