@@ -41,11 +41,11 @@ export default class SignUpForm extends Component {
         <div className="form-container">
           <form autoComplete="off" onSubmit={this.handleSubmit}>
             <div className="topRowForm">
+              <input type="text" name="name" placeholder="NAME" value={this.state.name} onChange={this.handleChange} required />
               <input type="email" name="email" placeholder="EMAIL" value={this.state.email} onChange={this.handleChange} required />
-              <input type="password" name="password" placeholder="PASSWORD" value={this.state.password} onChange={this.handleChange} required />
             </div>
             <div className="bottomRowForm">
-              <input type="text" name="name" placeholder="NAME" value={this.state.name} onChange={this.handleChange} required />
+              <input type="password" name="password" placeholder="PASSWORD" value={this.state.password} onChange={this.handleChange} required />
               <input type="password" name="confirm" placeholder="CONFIRM" value={this.state.confirm} onChange={this.handleChange} required />
             </div>  
             <button type="submit" disabled={disable}>SIGN UP</button>
